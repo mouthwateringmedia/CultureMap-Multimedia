@@ -14,11 +14,11 @@ class PubAdmin (hatband.ModelAdmin):
 class ECAdmin (hatband.ModelAdmin):
   list_display = ('title', 'slug', 'ctype')
   list_filter = ('ctype',)
-  search_fields = ('title', 'slug')
+  search_fields = ('title', 'file')
   
   fieldsets = (
     (None, {
-        'fields': ('title', 'slug', 'publisher'),
+        'fields': ('title', 'publisher'),
     }),
     
     ('Content', {

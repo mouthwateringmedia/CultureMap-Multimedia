@@ -12,7 +12,7 @@ class PubAdmin (hatband.ModelAdmin):
   search_fields = ('name', 'slug')
   
 class ECAdmin (hatband.ModelAdmin):
-  list_display = ('title', 'ctype', 'publisher')
+  list_display = ('title', 'ctype', 'publisher', 'file')
   list_filter = ('ctype', 'publisher')
   search_fields = ('title', 'file')
   

@@ -44,6 +44,8 @@ class EmbeddedContent (Content):
   
   publisher = models.ForeignKey(Publisher, blank=True, null=True)
   
+  migrated_from = models.CharField(max_length=255, blank=True, null=True)
+  
   class Meta:
     verbose_name_plural = 'Embedded Content'
     
